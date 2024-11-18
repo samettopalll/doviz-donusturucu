@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Döviz Dönüştürücü</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Döviz Kuru Hesaplama</h1>
+        <label for="currency">Para Birimi Seçin:</label>
+        <select id="currency" onchange="fetchExchangeRate()">
+            <!--  Yeni option ekleyip value değerine ilgili para biriminin ISO 4217 kodunu ekleyip seçenekleri çoğaltabilirsiniz.
+              Örnek: <option value="RUB">Ruble (RUB)</option> -->
+            <option value="USD">Dolar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Sterlin (GBP)</option>
+            <option value="JPY">Yen (JPY)</option>
+        </select>
+        <div class="rate" id="rate"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
